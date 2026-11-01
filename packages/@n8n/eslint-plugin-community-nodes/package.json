@@ -11,10 +11,10 @@
     }
   },
   "scripts": {
-    "build": "node init && tsc --project tsconfig.build.json",
-    "build:docs": "node init && eslint-doc-generator",
+    "build": "tsc --project tsconfig.build.json",
+    "build:docs": "eslint-doc-generator",
     "clean": "rimraf dist .turbo",
-    "dev": "node init && pnpm watch",
+    "dev": "pnpm watch",
     "format": "biome format --write .",
     "format:check": "biome ci .",
     "lint": "eslint src",
